@@ -6,6 +6,7 @@ import { ThemeProvider } from "./components/ThemeProvider";
 import { ProgressBarProvider } from "./components/TopLoadingBar";
 import { UserProvider } from "./components/providers/UserProvider";
 import Script from "next/script";
+import {SocketProvider} from "./components/providers/SocketProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
