@@ -12,7 +12,12 @@ export interface LogEntry {
   decodedData?: XdrFields;
 }
 
+export interface FuseMatch {
+  key: string;
+  indices: [number, number][];
+}
+
 export interface FilteredLogResult {
   item: LogEntry;
-  matches?: readonly FuseResultMatch[];
+  matches?: FuseMatch[];
 }
