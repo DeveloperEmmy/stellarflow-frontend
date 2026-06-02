@@ -5,7 +5,6 @@ import React, {
   useState,
   useCallback,
   memo,
-  useSyncExternalStore,
 } from "react";
 import { useRAFInterval } from "@/app/hooks/useRAFInterval";
 import { useInactivityDelay } from "@/app/hooks/useInactivityDelay";

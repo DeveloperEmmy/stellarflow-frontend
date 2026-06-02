@@ -191,7 +191,7 @@ export function useSocket(options: UseSocketOptions = {}): UseSocketReturn {
       setError("Failed to establish WebSocket connection");
       console.error("Connection error:", err);
     }
-  }, []); // ← intentionally empty; all mutable values go through refs
+  }, [flushPendingUpdates, setError]);
 
   const disconnect = useCallback(() => {
     manuallyDisconnectedRef.current = true;
